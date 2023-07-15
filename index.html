@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sparkm -Developer Portfolio</title>
+    <title>Shrijith -Developer Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
         }
 
         body {
-            background-color: rgb(53,4,187);
+            background-color: rgb(53, 4, 187);
             color: white;
             font-family: 'Poppins', sans-serif;
         }
@@ -26,7 +26,7 @@
             justify-content: space-around;
             align-items: center;
             height: 50px;
-            background-color: rgb(6,6,76);
+            background-color: rgb(6, 6, 76);
 
         }
 
@@ -40,21 +40,23 @@
             margin: 0 23px;
         }
 
-        nav ul li a:hover{
+        nav ul li a:hover {
             text-decoration: none;
-            color: rgb(200,103,170);
+            color: rgb(200, 103, 170);
             font-size: 1.01rem;
         }
-        nav ul li a{
+
+        nav ul li a {
             text-decoration: none;
             color: white;
         }
+
         .left {
             font-size: 1.5rem;
         }
 
 
-        .firstSection{
+        .firstSection {
             display: flex;
             justify-content: space-around;
             margin: 80px 0;
@@ -75,17 +77,24 @@
             border-image-width: 75%;
         }
 
-        .rightSection img{
-            max-width: 800px; /* Set the maximum width */
-            max-height: 500px; /* Set the maximum height */
-            width: auto; /* Allow the image to scale width proportionally */
-            height: auto; 
-            
+        .rightSection img {
+            max-width: 800px;
+            /* Set the maximum width */
+            max-height: 500px;
+            /* Set the maximum height */
+            width: auto;
+            /* Allow the image to scale width proportionally */
+            height: auto;
+
         }
 
-        .name{
-            color:rgb(6,6,76);
+        .name {
+            color: rgb(6, 6, 76);
             font-weight: 600;
+        }
+
+        #element {
+            color: aqua;
         }
     </style>
 </head>
@@ -93,7 +102,7 @@
 <body>
     <header>
         <nav>
-            <div class="'left">Xsparkm's portfolio</div>
+            <div class="'left">Shrijith's portfolio</div>
             <div class="right">
                 <ul>
                     <li><a href="">About</a></li>
@@ -108,13 +117,26 @@
     <main>
         <section class="firstSection">
             <div class="leftSection">
-                <p>Hello! I'm <span class="name">Shrijith</span> and I am a Python Developer </p>
+                <p>Hello! I'm <span class="name">Shrijith</span> and </p>
+                <div>I am a</div>
+                <span id="element"></span>
+
+
             </div>
             <div class="rightSection">
                 <img src=".\assets\bg.png" alt="">
             </div>
         </section>
     </main>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Python Developer.', 'AI enthusiast', 'Discord Bot Developer', 'Student', 'Weeb'],
+            typeSpeed: 50,
+        });
+    </script>
+
 </body>
 
 </html>
